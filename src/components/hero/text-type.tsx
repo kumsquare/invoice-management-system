@@ -1,8 +1,15 @@
 'use client';
-
-import { type ElementType, useEffect, useRef, useState, createElement, useMemo, useCallback } from 'react';
+import React, {
+  type ElementType,
+  useEffect,
+  useRef,
+  useState,
+  createElement,
+  useMemo,
+  useCallback,
+} from 'react';
 import { gsap } from 'gsap';
-import './TextType.css';
+import './text-type.css';
 
 interface TextTypeProps {
   className?: string;
@@ -178,7 +185,7 @@ const TextType = ({
       className: `text-type ${className}`,
       ...props
     },
-    <span className="text-type__content" style={{ color: getCurrentTextColor() || 'inherit' }}>
+    <span className="font-mono text-type__content" style={{ color: getCurrentTextColor() || 'inherit' }}>
       {displayedText}
     </span>,
     showCursor && (
