@@ -1,6 +1,6 @@
 'use client'
 import { Link } from 'react-router-dom'
-import TextType from '../components/hero/text-type'
+import TextType from '../components/design/text-type'
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div>
-        <div className="mx-auto max-w-3xl py-16 sm:py-20 lg:py-15">
+        <div className="mx-auto max-w-3xl py-16 sm:py-20 lg:py-0">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="font-mono font-semibold relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 <h1 className="font-mono text-3xl !text-indigo-600 font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -42,7 +42,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="font-mono mt-10 flex items-center justify-center gap-x-6">
-              <Link to="/dashboard" className="text-xl rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" > 
+              <Link to="/dashboard" className="text-xl mb-15 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" > 
                 Get started 
               </Link>
             </div>

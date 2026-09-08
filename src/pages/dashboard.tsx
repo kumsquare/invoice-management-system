@@ -3,7 +3,7 @@ import PaidInvoices from "../components/dashboard/PaidInvoices";
 import PendingAmount from "../components/dashboard/PendingAmount";
 import OverdueInvoices from "../components/dashboard/OverdueInvoices";
 import { useNavigate } from "react-router-dom";
-import TextType from "../components/hero/text-type";
+import TextType from "../components/design/text-type";
 
 const Dashboard = () => {
   const navigate = useNavigate();

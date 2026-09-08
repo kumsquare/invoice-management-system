@@ -1,5 +1,5 @@
 import TextType from './text-type.tsx';
-const Usage = () => {
+const TextTypeUsage = () => {
   <TextType 
   text={["Text typing effect", "for your websites", "Happy coding!"]}
   typingSpeed={75}
@@ -11,4 +11,4 @@ const Usage = () => {
 />
 }
 
-export default Usage;
+export default TextTypeUsage;
