@@ -155,13 +155,6 @@ const InvoiceList = () => {
         </div>
 
         <InvoiceTable invoices={paginatedInvoices} />
-
-        <p className="mt-4 text-red-600">
-          Debug: {processedInvoices.length} invoices | {totalPages} pages | Page {currentPage}
-        </p>
-        <p className="text-red-600">
-          Search: {search} | Status: {status} | Date: {dateRange} | Sort: {sortBy}
-        </p>
         
         <Pagination
           currentPage={currentPage}

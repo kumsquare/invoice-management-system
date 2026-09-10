@@ -8,4 +8,13 @@ export interface Invoice {
   dueDate: string;
   amount: number;
   status: InvoiceStatus;
+  item?: InvoiceItem[];
+}
+
+export interface InvoiceItem {
+  id: string;
+  description: string;
+  quantity: number;
+  price: number;
+  total: number;
 }

@@ -1,15 +1,40 @@
 import type { Invoice } from "../types/invoice";
 
 export const invoices: Invoice[] = [
+
   {
-    id: "INV-1001",
-    customer: "Acme Corporation",
-    email: "billing@acme.com",
-    issueDate: "2026-08-01",
-    dueDate: "2026-08-15",
-    amount: 45000,
-    status: "Overdue",
-  },
+  id: "INV-1001",
+  customer: "Acme Corporation",
+  email: "billing@acme.com",
+  issueDate: "2026-08-01",
+  dueDate: "2026-08-15",
+  amount: 45000,
+  status: "Overdue",
+
+  item: [
+    {
+      id: "ITEM-1",
+      description: "Web Development",
+      quantity: 1,
+      price: 25000,
+      total: 25000,
+    },
+    {
+      id: "ITEM-2",
+      description: "UI/UX Design",
+      quantity: 1,
+      price: 10000,
+      total: 10000,
+    },
+    {
+      id: "ITEM-3",
+      description: "API Integration",
+      quantity: 1,
+      price: 10000,
+      total: 10000,
+    },
+  ],
+},
   {
     id: "INV-1002",
     customer: "TechNova Solutions",

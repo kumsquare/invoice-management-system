@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Eye } from "lucide-react";
 import type { Invoice } from "../../types/invoice";
-import { useState } from "react";
+import { memo, useState } from "react";
 interface InvoiceTableProps {
   invoices: Invoice[];
 }
@@ -183,4 +183,4 @@ const InvoiceTable = ({ invoices }: InvoiceTableProps) => {
   );
 };
 
-export default InvoiceTable;
+export default memo(InvoiceTable);

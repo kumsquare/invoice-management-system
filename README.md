@@ -73,3 +73,32 @@ export default defineConfig([
 ])
 
 ```
+
+Dataflow diagram 
+
+                 ┌──────────────┐
+                 │   Dashboard  │
+                 └──────┬───────┘
+                        │
+                        ↓
+                 ┌──────────────┐
+                 │ Invoice List │
+                 └──────┬───────┘
+                        │
+          ┌─────────────┼─────────────┐
+          ↓             ↓             ↓
+      Search/Filter   Pagination    Sort
+                        │
+                        ↓
+                 ┌──────────────┐
+                 │ Invoice Table│
+                 └──────┬───────┘
+                        │
+                      View
+                        ↓
+                 ┌──────────────┐
+                 │Invoice Detail│
+                 └──────┬───────┘
+                        │
+                        ↓
+                  Download CSV
